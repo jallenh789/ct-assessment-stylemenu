@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Bungee+Inline|Oswald');
+body{
+    font-family: Oswald;
+    font-size: 14px;
+}
 /* 
     Add a CSS ruleset to accomplish the following:
     - Use the 'Oswald' font family at 14px throughout the body of the document.
@@ -14,6 +18,11 @@ nav {
     margin: 10px auto;
 }
 
+h1{
+    font-family: 'Bungee Inline';
+    font-size: 46px;
+    font-weight: lighter;
+}
 /* 
     Add a CSS ruleset targeting the restaurant name to accomplish the following:
         - Use the 'Bungee Inline' font 
@@ -35,11 +44,18 @@ h2 {
     margin-top: 0;
 }
 
+h2{
+    font-variant-caps: uppercase;
+}
 /* 
     Add a CSS ruleset targeting targeting the headings of the menu (e.g. "Starters") to accomplish the following:
         - Show each of the section headings of the menu in uppercase
 */
 
+dt{
+    font-weight: bold;
+    font-size: 16px;
+}
 /* 
      Update the following ruleset (dt) to accomplish the following:
         - Make the name of each menu item appear in bold 
@@ -50,6 +66,9 @@ dt {
     display: inline;
 }
 
+dt::after{
+    content: ",";
+}
 /* 
     Add a CSS ruleset to accomplish the following:
     - Make a comma appear after the name of each menu item
@@ -72,11 +91,17 @@ dd::after {
     padding: 0 0 35px 20px;
 }
 
+footer{
+    text-align: right;
+}
 /* 
     Add a CSS ruleset targeting the footer to accomplish the following:
     - right align the text in the footer
 */
 
+#starters, #desserts{
+    border: 2px black;
+}
 /* 
     Add a CSS ruleset targeting the starters and desserts sections to accomplish the following:
     - draw a 2px black border around the sections
